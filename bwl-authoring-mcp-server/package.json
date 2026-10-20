@@ -1,0 +1,21 @@
+{
+  "name": "bwl-authoring-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for the IBM Blueworks Live Artifact Authoring API",
+  "type": "module",
+  "bin": {
+    "bwl-authoring-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

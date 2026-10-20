@@ -1,0 +1,72 @@
+{
+  "mcpServers": {
+    "bwl-reporting-mcp-server": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/bwl_mcp_servers/bwl-reporting-mcp-server/build/index.js"
+      ],
+      "env": {
+        "BWL_SERVER": "https://<your-region>.blueworkslive.com",
+        "BWL_CLIENT_ID": "<client id>",
+        "BWL_CLIENT_SECRET": "<client secret>"
+      },
+      "alwaysAllow": [
+        "bwl_list_spaces",
+        "bwl_get_space",
+        "bwl_create_space",
+        "bwl_list_blueprints",
+        "bwl_get_blueprint",
+        "bwl_import_blueprint",
+        "bwl_export_blueprint",
+        "bwl_update_activity",
+        "bwl_set_activity_documentation",
+        "bwl_search",
+        "bwl_get_blueprint_usage",
+        "bwl_list_glossary_categories",
+        "bwl_list_glossary_values",
+        "bwl_upsert_glossary_values",
+        "bwl_get_glossary_value_usage",
+        "bwl_get_activity_legacy",
+        "bwl_list_activities",
+        "bwl_get_process_data"
+      ],
+      "disabled": false
+    },
+    "bwl-authoring-mcp-server": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/bwl_mcp_servers/bwl-authoring-mcp-server/build/index.js"
+      ],
+      "env": {
+        "BWL_SERVER": "https://<your-region>.blueworkslive.com",
+        "BWL_ON_BEHALF_OF": "<bwl username or email>",
+        "BWL_CLIENT_ID": "<client id>",
+        "BWL_CLIENT_SECRET": "<client secret>"
+      },
+      "alwaysAllow": [
+        "bwl_move_artifact",
+        "bwl_rename_artifact",
+        "bwl_archive_artifact",
+        "bwl_publish_artifact",
+        "bwl_unpublish_artifact",
+        "bwl_copy_artifact",
+        "bwl_delete_artifact",
+        "bwl_create_space",
+        "bwl_update_space_permissions",
+        "bwl_upsert_glossary_values",
+        "bwl_delete_glossary_value",
+        "bwl_update_activity_details",
+        "bwl_set_activity_documentation",
+        "bwl_import_blueprint",
+        "bwl_create_policy",
+        "bwl_post_comment",
+        "bwl_upload_file",
+        "bwl_update_policy",
+        "bwl_list_revisions",
+        "bwl_create_revision",
+        "bwl_update_favorites"
+      ],
+      "disabled": false
+    }
+  }
+}
